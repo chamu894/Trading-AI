@@ -1,0 +1,212 @@
+[
+    {
+        "type": "SELL",
+        "entry": 4699.85,
+        "sl": 4704.85,
+        "tp": 4689.85,
+        "probability": 0.21655862033367157,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4699.87, stoplimit=0.0, sl=4704.85, tp=4689.85, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 09:58:53.667164"
+    },
+    {
+        "type": "SELL",
+        "entry": 4699.91,
+        "sl": 4704.91,
+        "tp": 4689.91,
+        "probability": 0.14095331728458405,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4699.91, stoplimit=0.0, sl=4704.91, tp=4689.91, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 09:58:58.704468"
+    },
+    {
+        "type": "SELL",
+        "entry": 4699.81,
+        "sl": 4704.81,
+        "tp": 4689.81,
+        "probability": 0.24681156873703003,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4699.8, stoplimit=0.0, sl=4704.81, tp=4689.81, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 09:59:03.740936"
+    },
+    {
+        "type": "SELL",
+        "entry": 4699.79,
+        "sl": 4704.79,
+        "tp": 4689.79,
+        "probability": 0.24681156873703003,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4699.79, stoplimit=0.0, sl=4704.79, tp=4689.79, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 09:59:08.769900"
+    },
+    {
+        "type": "SELL",
+        "entry": 4700.0,
+        "sl": 4705.0,
+        "tp": 4690.0,
+        "probability": 0.16283965110778809,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4699.95, stoplimit=0.0, sl=4705.0, tp=4690.0, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 09:59:13.806202"
+    },
+    {
+        "type": "SELL",
+        "entry": 4699.99,
+        "sl": 4704.99,
+        "tp": 4689.99,
+        "probability": 0.16283965110778809,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4699.96, stoplimit=0.0, sl=4704.99, tp=4689.99, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 09:59:18.833315"
+    },
+    {
+        "type": "SELL",
+        "entry": 4698.5,
+        "sl": 4703.5,
+        "tp": 4688.5,
+        "probability": 0.1885443925857544,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4698.5, stoplimit=0.0, sl=4703.5, tp=4688.5, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 10:02:04.555990"
+    },
+    {
+        "type": "SELL",
+        "entry": 4698.35,
+        "sl": 4703.35,
+        "tp": 4688.35,
+        "probability": 0.0754142478108406,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4698.35, stoplimit=0.0, sl=4703.35, tp=4688.35, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 10:02:14.618253"
+    },
+    {
+        "type": "SELL",
+        "entry": 4698.7,
+        "sl": 4703.7,
+        "tp": 4688.7,
+        "probability": 0.16539603471755981,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4698.7, stoplimit=0.0, sl=4703.7, tp=4688.7, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 10:02:19.646695"
+    },
+    {
+        "type": "SELL",
+        "entry": 4698.72,
+        "sl": 4703.72,
+        "tp": 4688.72,
+        "probability": 0.21704049408435822,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4698.72, stoplimit=0.0, sl=4703.72, tp=4688.72, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 10:02:29.701721"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.61,
+        "sl": 4701.61,
+        "tp": 4686.61,
+        "probability": 0.1813177466392517,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.61, stoplimit=0.0, sl=4701.61, tp=4686.61, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 10:04:10.093222"
+    },
+    {
+        "type": "SELL",
+        "entry": 4697.17,
+        "sl": 4702.17,
+        "tp": 4687.17,
+        "probability": 0.17657418549060822,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4697.17, stoplimit=0.0, sl=4702.17, tp=4687.17, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 10:04:20.140838"
+    },
+    {
+        "type": "SELL",
+        "entry": 4695.34,
+        "sl": 4700.34,
+        "tp": 4685.34,
+        "probability": 0.16105632483959198,
+        "score": -6,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4695.34, stoplimit=0.0, sl=4700.34, tp=4685.34, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 10:38:13.674599"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.8,
+        "sl": 4701.8,
+        "tp": 4686.8,
+        "probability": 0.22339968383312225,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.8, stoplimit=0.0, sl=4701.8, tp=4686.8, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:00:53.582482"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.92,
+        "sl": 4701.92,
+        "tp": 4686.92,
+        "probability": 0.22339968383312225,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.92, stoplimit=0.0, sl=4701.92, tp=4686.92, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:00:58.614654"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.75,
+        "sl": 4701.75,
+        "tp": 4686.75,
+        "probability": 0.22339968383312225,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.75, stoplimit=0.0, sl=4701.75, tp=4686.75, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:01:03.645402"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.92,
+        "sl": 4701.92,
+        "tp": 4686.92,
+        "probability": 0.24678803980350494,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.92, stoplimit=0.0, sl=4701.92, tp=4686.92, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:01:53.817936"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.35,
+        "sl": 4701.35,
+        "tp": 4686.35,
+        "probability": 0.22679999470710754,
+        "score": -5,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.35, stoplimit=0.0, sl=4701.35, tp=4686.35, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:02:49.024321"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.08,
+        "sl": 4701.08,
+        "tp": 4686.08,
+        "probability": 0.19677531719207764,
+        "score": -8,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.08, stoplimit=0.0, sl=4701.08, tp=4686.08, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:07:14.933728"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.15,
+        "sl": 4701.15,
+        "tp": 4686.15,
+        "probability": 0.19677531719207764,
+        "score": -6,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.15, stoplimit=0.0, sl=4701.15, tp=4686.15, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:07:19.965403"
+    },
+    {
+        "type": "SELL",
+        "entry": 4696.75,
+        "sl": 4701.75,
+        "tp": 4686.75,
+        "probability": 0.20542797446250916,
+        "score": -6,
+        "result": "OrderSendResult(retcode=10027, deal=0, order=0, volume=0.0, price=0.0, bid=0.0, ask=0.0, comment='AutoTrading disabled by client', request_id=0, retcode_external=0, request=TradeRequest(action=1, magic=10001, order=0, symbol='GOLD', volume=0.1, price=4696.75, stoplimit=0.0, sl=4701.75, tp=4686.75, deviation=10, type=1, type_filling=1, type_time=0, expiration=0, comment='AI TRADE', position=0, position_by=0))",
+        "time": "2026-05-12 11:08:15.303580"
+    }
+]
