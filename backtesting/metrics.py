@@ -1,52 +1,38 @@
 def calculate_metrics(trades):
 
+    total_trades = len(trades)
+
+    if total_trades == 0:
+
+        return {
+            "total_trades": 0,
+            "wins": 0,
+            "losses": 0,
+            "winrate": 0
+        }
+
     wins = 0
     losses = 0
 
-    filtered_trades = []
-
-    # =========================
-    # FILTER OPEN TRADES
-    # =========================
     for t in trades:
 
-        if t["result"] == "OPEN":
-            continue
+        # SAFE result access
+        result = t.get("result", "")
 
-        filtered_trades.append(t)
-
-        if t["result"] == "WIN":
+        # WIN CHECK
+        if result in ["WIN", "PROFIT", "TP_HIT"]:
             wins += 1
 
-        elif t["result"] == "LOSS":
+        # LOSS CHECK
+        elif result in ["LOSS", "SL_HIT"]:
             losses += 1
 
-    # =========================
-    # TOTAL TRADES
-    # =========================
-    total = wins + losses
-
-    # =========================
     # WINRATE
-    # =========================
-    if total > 0:
+    winrate = (wins / total_trades) * 100
 
-        winrate = (wins / total) * 100
-
-    else:
-
-        winrate = 0
-
-    # =========================
-    # RETURN RESULTS
-    # =========================
     return {
-
-        "total_trades": total,
-
+        "total_trades": total_trades,
         "wins": wins,
-
         "losses": losses,
-
         "winrate": round(winrate, 2)
     }
