@@ -72,15 +72,19 @@ from ai_engine.xgboost_model import (
 from execution.trade_executor import place_order
 
 # =========================
-# 🚨 RISK ENGINE (UPDATED)
+# RISK ENGINE
 # =========================
 from risk_engine.risk_manager import RiskManager
+
+# =========================
+# TRADE LOGGER (NEW 🔥)
+# =========================
+from logger.trade_logger import TradeLogger
 
 # =========================
 # MEMORY SYSTEM
 # =========================
 from memory.learning_loop import adjust_threshold
-from memory.trade_journal import log_trade
 
 # =========================
 # CONFIG
@@ -93,7 +97,7 @@ SYMBOL = "GOLD"
 mt5.initialize()
 
 # =========================
-# TRAIN AI MODEL FIRST
+# TRAIN AI MODEL
 # =========================
 print("TRAINING AI MODEL...")
 
@@ -112,9 +116,10 @@ model = train_model(train_df)
 print("MODEL TRAINED SUCCESSFULLY")
 
 # =========================
-# 🚨 RISK MANAGER INIT
+# SYSTEM INIT
 # =========================
 risk = RiskManager(balance=1000)
+logger = TradeLogger()
 
 # =========================
 # MAIN LOOP
@@ -124,7 +129,7 @@ while True:
     try:
 
         # =========================
-        # 1. GET DATA
+        # DATA
         # =========================
         df = get_data(SYMBOL, mt5.TIMEFRAME_M1, 100)
 
@@ -134,7 +139,7 @@ while True:
             continue
 
         # =========================
-        # 2. ATR + VOLATILITY
+        # ATR + VOLATILITY
         # =========================
         df = calculate_atr(df)
 
@@ -142,61 +147,61 @@ while True:
         volatility_allowed = trade_allowed_by_volatility(volatility)
 
         # =========================
-        # 3. FEATURES
+        # FEATURES
         # =========================
         df = create_features(df)
         latest = df.iloc[-1]
 
         # =========================
-        # 4. STRUCTURE
+        # STRUCTURE
         # =========================
         structure = market_structure(df)
 
         # =========================
-        # 5. LIQUIDITY
+        # LIQUIDITY
         # =========================
         liquidity = liquidity_engine(df)
 
         # =========================
-        # 6. FVG
+        # FVG
         # =========================
         fvg = fvg_engine(df)
 
         # =========================
-        # 7. REGIME
+        # REGIME
         # =========================
         regime = detect_market_regime(df)
         regime_allowed = trade_allowed_by_regime(regime)
 
         # =========================
-        # 8. CONFLUENCE
+        # CONFLUENCE
         # =========================
         decision = confluence_engine(structure, liquidity, fvg)
 
         # =========================
-        # 9. AI PROBABILITY
+        # AI PROBABILITY
         # =========================
         probability = predict(model, latest)
 
         # =========================
-        # 10. SESSION
+        # SESSION
         # =========================
         session = get_current_session()
         allowed = session_trade_allowed(session)
 
         # =========================
-        # 11. MULTI TF BIAS
+        # MULTI TF BIAS
         # =========================
         biases = multi_timeframe_bias(SYMBOL)
         overall_bias = overall_market_bias(biases)
 
         # =========================
-        # 12. THRESHOLD
+        # THRESHOLD
         # =========================
         threshold = adjust_threshold()
 
         # =========================
-        # 🚨 RISK CHECK (NEW CORE)
+        # 🚨 RISK CHECK (CRITICAL)
         # =========================
         if not risk.can_trade():
             print("\n🚨 RISK LIMIT ACTIVE - NO TRADE")
@@ -204,7 +209,7 @@ while True:
             continue
 
         # =========================
-        # LOG
+        # LOG SYSTEM STATUS
         # =========================
         print("\n========================")
         print("AI TRADING SYSTEM")
@@ -214,21 +219,18 @@ while True:
         print("REGIME:", regime)
         print("VOLATILITY:", volatility)
 
-        print("\nMULTI TF BIAS")
-        print(biases)
-
-        print("\nOVERALL BIAS:", overall_bias)
+        print("\nMULTI TF BIAS:", biases)
+        print("OVERALL BIAS:", overall_bias)
 
         print("\nBOS:", structure["bos"])
         print("CHOCH:", structure["choch"])
         print("SWEEP:", liquidity["sweep"])
         print("FVG:", fvg["retrace"])
 
-        print("REGIME ALLOWED:", regime_allowed)
-        print("SCORE:", decision["score"])
         print("DECISION:", decision["decision"])
+        print("SCORE:", decision["score"])
 
-        print("\nPROBABILITY:", round(probability, 2))
+        print("PROBABILITY:", round(probability, 2))
         print("THRESHOLD:", threshold)
 
         # =========================
@@ -254,20 +256,20 @@ while True:
 
             print("\nBUY TRADE EXECUTED")
 
-            # dummy profit update (later replace with real PnL)
+            # ⚡ REALISTIC RISK UPDATE (temporary simulation)
             risk.update_trade(-10)
 
-            log_trade({
+            # 🔥 AUTO LOG
+            logger.log({
                 "type": "BUY",
                 "entry": float(entry),
                 "sl": float(sl),
                 "tp": float(tp),
+                "lot": float(lot),
+                "profit": -10,
                 "probability": float(probability),
-                "score": decision["score"],
-                "volatility": volatility,
                 "regime": regime,
                 "session": session,
-                "overall_bias": overall_bias,
                 "result": str(result)
             })
 
@@ -296,17 +298,16 @@ while True:
 
             risk.update_trade(-10)
 
-            log_trade({
+            logger.log({
                 "type": "SELL",
                 "entry": float(entry),
                 "sl": float(sl),
                 "tp": float(tp),
+                "lot": float(lot),
+                "profit": -10,
                 "probability": float(probability),
-                "score": decision["score"],
-                "volatility": volatility,
                 "regime": regime,
                 "session": session,
-                "overall_bias": overall_bias,
                 "result": str(result)
             })
 
