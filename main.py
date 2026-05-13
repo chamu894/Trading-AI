@@ -187,7 +187,15 @@ while True:
         # SESSION
         # =========================
         session = get_current_session()
+
+
+        
         allowed = session_trade_allowed(session)
+
+        print("SESSION ALLOWED:", allowed)
+        print("VOLATILITY ALLOWED:", volatility_allowed)
+        print("REGIME ALLOWED:", regime_allowed)
+        print("RISK ALLOWED:", risk.can_trade())
 
         # =========================
         # MULTI TF BIAS
@@ -237,7 +245,7 @@ while True:
         # BUY LOGIC
         # =========================
         if (
-            probability > threshold and
+            probability >= threshold and
             decision["decision"] == "BUY" and
             allowed and
             volatility_allowed and
@@ -257,7 +265,7 @@ while True:
             print("\nBUY TRADE EXECUTED")
 
             # ⚡ REALISTIC RISK UPDATE (temporary simulation)
-            risk.update_trade(-10)
+            risk.update_trade(5)
 
             # 🔥 AUTO LOG
             logger.log({
@@ -296,7 +304,7 @@ while True:
 
             print("\nSELL TRADE EXECUTED")
 
-            risk.update_trade(-10)
+            risk.update_trade(5)
 
             logger.log({
                 "type": "SELL",
