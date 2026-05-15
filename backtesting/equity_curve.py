@@ -13,21 +13,34 @@ def build_equity_curve(
         # Risk 1%
         risk = balance * 0.01
 
-        if trade["result"] == "WIN":
+        # SAFE result access
+        result = trade.get("result", "")
+
+        # WIN
+        if result in ["WIN", "PROFIT", "TP_HIT"]:
 
             profit = risk * risk_reward
 
             balance += profit
 
-        else:
+        # LOSS
+        elif result in ["LOSS", "SL_HIT"]:
 
             balance -= risk
+
+        # UNKNOWN RESULT
+        else:
+            pass
 
         equity.append(balance)
 
     return equity
 
+
 def calculate_drawdown(equity):
+
+    if len(equity) == 0:
+        return 0
 
     peak = equity[0]
 
@@ -45,6 +58,7 @@ def calculate_drawdown(equity):
 
     return round(max_drawdown * 100, 2)
 
+
 def profit_factor(trades):
 
     gross_profit = 0
@@ -52,16 +66,19 @@ def profit_factor(trades):
 
     for trade in trades:
 
-        if trade["result"] == "WIN":
+        result = trade.get("result", "")
+
+        if result in ["WIN", "PROFIT", "TP_HIT"]:
             gross_profit += 2
 
-        else:
+        elif result in ["LOSS", "SL_HIT"]:
             gross_loss += 1
 
     if gross_loss == 0:
         return 0
 
     return round(gross_profit / gross_loss, 2)
+
 
 def analyze_equity(trades):
 
@@ -76,4 +93,3 @@ def analyze_equity(trades):
         "max_drawdown": dd,
         "profit_factor": pf
     }
-
